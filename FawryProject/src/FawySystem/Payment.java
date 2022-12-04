@@ -4,7 +4,7 @@ public abstract class Payment {
 	private int amount;
 
 	public Payment(int am) {
-		amount = am;
+		setAmount(am);
 	}
 
 	public int getAmount() {
@@ -15,5 +15,9 @@ public abstract class Payment {
 		this.amount = amount;
 	}
 	
+	public abstract void Pay(int amount);
+	
+
+
 
 }
