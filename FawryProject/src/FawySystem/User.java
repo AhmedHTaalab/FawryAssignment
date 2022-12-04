@@ -6,6 +6,8 @@ public class User {
     private String password;
     private String username;
     private Wallet wallets;
+
+    private xd xd;
  
 public User(String em,String pass, String user, Wallet wall){
         setEmail(em);
