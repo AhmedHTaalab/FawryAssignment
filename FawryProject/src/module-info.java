@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author misho
+ *
+ */
+module FawryProject {
+}
