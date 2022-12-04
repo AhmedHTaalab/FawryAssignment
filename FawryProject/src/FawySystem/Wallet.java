@@ -1,11 +1,11 @@
 package FawySystem;
 
 public class Wallet implements Payment {
-	public static int Wam;
+	public static int Wamount;
 	
 
 	public Wallet(int am) {
-		Wam = am;
+		Wamount = am;
 	
 	}
 	
@@ -16,9 +16,9 @@ public class Wallet implements Payment {
 	@Override
 	public void Pay(int amount) {
 		
-		if(Wam >= amount) {
+		if(Wamount >= amount) {
 		System.out.println(amount +" Paid with Wallet");
-		Wam = Wam - amount;
+		Wamount = Wamount - amount;
 		return ;
 		
 		}
@@ -30,7 +30,7 @@ public class Wallet implements Payment {
 
 	public void check_wallet_money() {
 		
-		System.out.println("Wallet Avaliable Money is:" + Wam);
+		System.out.println("Wallet Avaliable Money is:" + Wamount);
 	}
 	
 

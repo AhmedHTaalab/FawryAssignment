@@ -17,6 +17,7 @@ public User(String em,String pass, String user, Wallet wall, int Item){
         setItemPrice(Item);
 
 }
+public User() {}
 public Wallet getWallets() {
 	return wallets;
 }
@@ -69,6 +70,10 @@ public void InsertInWallet(CreditCard cc, int WalletAmount) {
 public void check_wallet_money() {
 	
 	wallets.check_wallet_money();
+}
+public void UserSearch(Search sc) {
+	sc.show_services_type();
+	
 }
 
 

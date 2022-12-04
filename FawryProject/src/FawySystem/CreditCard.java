@@ -38,11 +38,11 @@ public class CreditCard implements Payment {
 
 		
 
-	public void insertInWallet(int Wam) {
+	public void insertInWallet(int Wamount) {
 		
-		new Wallet(Wam);
+		new Wallet(Wamount);
 		
-		System.out.println(Wallet.Wam +" Inserted In Wallet");
+		System.out.println(Wallet.Wamount +" Inserted In Wallet");
 		
 	}
 
