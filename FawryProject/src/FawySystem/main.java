@@ -94,13 +94,50 @@ public class main {
 		}
 			else if(y == 2)
 			{
-				System.out.println("Enter phone number\n");
-				String phonenumber = cin.next();
-				System.out.println("Enter Amount should be Refunded");
-				int amount = cin.nextInt() ;
+				
 				Services ser = new Landline();
-				Refund refund = new Refund(amount, phonenumber, ser);
-				refund.requestRefund(amount, phonenumber, ser);
+				System.out.println("Enter 1) MobileRecharge\n"
+		                + "2) InternetPayment\n"
+						+ "3) LandLine\n"
+		                + "4) Donations\n");
+				int l = cin.nextInt();
+				if(l==1) {
+					System.out.println("Enter phone number\n");
+					String phonenumber = cin.next();
+					System.out.println("Enter Amount should be Refunded");
+					int amount = cin.nextInt() ;
+					System.out.println("Your Request has been sent to the Admin to check it");
+					Refund refund = new Refund(amount, phonenumber, ser);
+					refund.requestRefund(amount, phonenumber, ser);
+				}
+				else if(l==2) {
+					System.out.println("Enter home number\n");
+					String homenumber = cin.next();
+					System.out.println("Enter Amount should be Refunded");
+					int amount = cin.nextInt() ;
+					System.out.println("Your Request has been sent to the Admin to check it");
+					Refund refund = new Refund(amount, homenumber, ser);
+					refund.requestRefund(amount, homenumber, ser);
+					
+				}else if(l==3) {
+					System.out.println("Enter home number\n");
+					String homenumber = cin.next();
+					System.out.println("Enter Amount should be Refunded");
+					int amount = cin.nextInt() ;
+					System.out.println("Your Request has been sent to the Admin to check it");
+					Refund refund = new Refund(amount, homenumber, ser);
+					refund.requestRefund(amount, homenumber, ser);
+				}
+				else if(l==4) {
+					System.out.println("Enter Charity Name\n");
+					String charit = cin.next();
+					System.out.println("Enter Amount should be Refunded");
+					int amount = cin.nextInt() ;
+					System.out.println("Your Request has been sent to the Admin to check it");
+					Refund refund = new Refund(amount, charit, ser);
+					refund.requestRefund(amount, charit, ser);
+				}
+			
 			}
 		
 		else
