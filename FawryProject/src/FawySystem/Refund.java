@@ -8,9 +8,9 @@ public class Refund {
 	
 	private int amount; 
 	private String phoneNum;
-	private String service;
+	private Services service;
 	
-	public Refund(int amount, String phoneNum, String service) {
+	public Refund(int amount, String phoneNum, Services service) {
 		
 		this.amount = amount;
 		this.phoneNum = phoneNum;
@@ -40,10 +40,10 @@ public class Refund {
 		
 	}
 	
-	void requestRefund(int amount, String phoneNum, String service) {
+	void requestRefund(int amount, String UserName, Services service) {
 		
-		refund.add(new Refund(amount, phoneNum, service));
-		notifyAdmins(new Refund(amount, phoneNum, service));
+		refund.add(new Refund(amount, UserName, service));
+		notifyAdmins(new Refund(amount, UserName, service));
 	}
 	
 	void refundConfirmation(String confirmation) {

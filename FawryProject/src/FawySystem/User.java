@@ -8,6 +8,7 @@ public class User {
     private String password;
     private String username;
     private Wallet wallets;
+    private Services s;
  
 public User(String em,String pass, String user, Wallet wall, int Item){
         setEmail(em);
@@ -74,6 +75,9 @@ public void check_wallet_money() {
 public void UserSearch(Search sc) {
 	sc.show_services_type();
 	
+}
+public void RequestRefund(Refund rf) {
+	rf.requestRefund(ItemPrice, username, s);
 }
 
 
