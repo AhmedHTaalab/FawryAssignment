@@ -3,21 +3,23 @@ package FawySystem;
 import java.lang.String;
 public class User {
 	private int WalletAmount;
-	private int ItemPrice;
+	public static int Fees;
     private String email;
     private String password;
     private String username;
     private Wallet wallets;
     private Services s;
  
-public User(String em,String pass, String user, Wallet wall, int Item){
+public User(String em,String pass, String user, Wallet wall,int Fee){
         setEmail(em);
         setPassword(pass);
         setUsername(user);
         setWallets(wall);
-        setItemPrice(Item);
+        Fees = Fee;
 
 }
+
+
 public User() {}
 public Wallet getWallets() {
 	return wallets;
@@ -44,13 +46,6 @@ public void setUsername(String username) {
 	this.username = username;
 }
 
-public int getItemPrice() {
-	return ItemPrice;
-}
-public void setItemPrice(int itemPrice) {
-	ItemPrice = itemPrice;
-}
-
 public int getWalletAmount() {
 	return WalletAmount;
 }
@@ -61,7 +56,7 @@ public void setWalletAmount(int walletAmount) {
 
 
 public void PayAmount(Payment py) {
-	py.Pay(ItemPrice);
+	py.Pay(Fees);
 }
 
 public void InsertInWallet(CreditCard cc, int WalletAmount) {
@@ -77,7 +72,7 @@ public void UserSearch(Search sc) {
 	
 }
 public void RequestRefund(Refund rf) {
-	rf.requestRefund(ItemPrice, username, s);
+	rf.requestRefund(Fees, username, s);
 }
 
 

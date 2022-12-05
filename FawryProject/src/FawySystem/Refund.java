@@ -22,7 +22,7 @@ public class Refund {
 		return phoneNum;
 	}
 	
-	String getService() {
+	Services getService() {
 		return service;
 	}
 	
