@@ -50,4 +50,8 @@ public class Admin {
 	String getEmail() {
 		return email;
 	}
+	public void createHandler(HandlerFactory hr) {
+		hr.create_Form();
+		System.out.print("Service has been handled Successfully");
+	}
 }

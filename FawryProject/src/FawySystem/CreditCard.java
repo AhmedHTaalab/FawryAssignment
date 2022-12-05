@@ -43,7 +43,6 @@ public class CreditCard implements Payment {
 		new Wallet(Wamount);
 		
 		System.out.println(Wallet.Wamount +" Inserted In Wallet");
-		System.out.println(Wamount+" has been paid by Wallet");
 		
 	}
 

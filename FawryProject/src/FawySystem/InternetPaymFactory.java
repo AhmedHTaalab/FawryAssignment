@@ -24,7 +24,7 @@ public class InternetPaymFactory extends HandlerFactory{
 	@Override
 	public  Form create_Form(){
 
-	    Form createdForm = new InternetPaymForm(homeNumber,amount);
+	     createdForm = new InternetPaymForm(homeNumber,amount);
 	    return createdForm;
 	    
 	    }

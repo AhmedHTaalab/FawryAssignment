@@ -15,7 +15,7 @@ public MobileRechargeFactory(String mobile, int am) {
 @Override
 public Form create_Form() {
 
-    Form createdForm = new MobileRechForm(mobileNumber,amount);
+     createdForm = new MobileRechForm(mobileNumber,amount);
     return createdForm;
 }
 }

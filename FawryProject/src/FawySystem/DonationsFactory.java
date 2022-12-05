@@ -24,7 +24,7 @@ public class DonationsFactory extends HandlerFactory {
 	@Override
 	public  Form  create_Form(){
 
-	    Form createdForm = new DonationsForm(charity,amount);
+	     createdForm = new DonationsForm(charity,amount);
 	    return createdForm;
 	    
 	    }
