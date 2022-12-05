@@ -45,6 +45,8 @@ public class main {
 			int amount = cin.nextInt() ;
 		    if(q == 1)
 		    {
+		    	System.out.println("Please Enter The Number/Charity");
+		    	String number = cin.next() ;
 		    	System.out.println("EnterCardNumber");
 				String CardNumber = cin.next();
 				System.out.println("Enter CVV");
@@ -52,15 +54,21 @@ public class main {
 				System.out.println("Enter Expiray Date");
 				String Date = cin.next();
 				
+				
 		    	CreditCard cc = new CreditCard(CardNumber, CVV, Date);
 		    	username.PayAmount(cc);
+		    	System.out.println(amount+" Added to :"+number);
+
 		    }
 		    else if(q ==2)
 		    {
+		    	System.out.println("Please Enter The Number/Charity");
+		    	String xnumber = cin.next() ;
 		    	Wallet wallet = new Wallet(amount);
 		    	if(Wm>=amount)
 		    	{
 		    		username.PayAmount(wallet);
+		    		System.out.println(amount+" Added to :"+xnumber);
 		    		username.check_wallet_money();
 		    	}
 		    	else 
@@ -88,8 +96,11 @@ public class main {
 		    }
 		    else if(q == 3)
 		    {
+		    	System.out.println("Please Enter The Number/Charity");
+		    	String znumber = cin.next() ;
 		    	CashOnDelivery cash = new CashOnDelivery();
 		    	username.PayAmount(cash);
+		    	System.out.println(amount+" Added to :"+znumber);
 		    }
 		}
 			else if(y == 2)
